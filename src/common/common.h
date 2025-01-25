@@ -4,6 +4,9 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#if __cplusplus >= 201103L
+#include <cstdint>
+#endif
 #include <string>
 #include <vector>
 

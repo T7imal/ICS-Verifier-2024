@@ -4,6 +4,9 @@
 #ifndef MEM_NEW_H
 #define MEM_NEW_H
 
+#if __cplusplus >= 201103L
+#include <cstdint>
+#endif
 #include <string>
 #include <iostream>
 
