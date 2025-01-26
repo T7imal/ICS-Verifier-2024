@@ -33,7 +33,7 @@ void test(lc3::sim &sim, Tester &tester, double total_points) {
     sim.writeMem(0x3100, a0);
 
     // 设置最大运行指令数并运行
-    sim.setRunInstLimit(10000);
+    sim.setRunInstLimit(1000000);
     bool success = sim.runUntilHalt();
 
     // 验证输出、验证成功Halting
@@ -63,7 +63,7 @@ void test_nonrandom(lc3::sim &sim, Tester &tester, double total_points) {
     sim.writeMem(0x3100, a0);
 
     // 设置最大运行指令数并运行
-    sim.setRunInstLimit(10000);
+    sim.setRunInstLimit(1000000);
     bool success = sim.runUntilHalt();
 
     // 验证输出、验证成功Halting

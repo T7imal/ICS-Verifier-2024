@@ -141,7 +141,7 @@ def verify_submits(
                 lines = f.readlines()
 
             # 找到学号对应的行，检查姓名是否一致，若不一致则报错，若一致则找到lab_index对应的列并更新
-            # 第K列为lab1，第L列为lab2，以此类推
+            # 第L列为lab1，第M列为lab2，以此类推
             found = False
             for i in range(len(lines)):
                 if result["student_id"] in lines[i]:
@@ -150,7 +150,7 @@ def verify_submits(
                         print(f"学号 {result['student_id']} 对应的姓名不一致")
                         break
                     lines[i] = lines[i].split(",")
-                    lines[i][lab_index + 9] = result["score"]
+                    lines[i][lab_index + 10] = result["score"]
                     lines[i] = ",".join(lines[i])
                     break
 
