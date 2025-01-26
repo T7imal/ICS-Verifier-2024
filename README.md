@@ -34,7 +34,7 @@
 
 - 测试程序的其他参数如下，具体请查看[官方文档](https://github.com/chiragsakhuja/lc3tools/blob/master/docs/CLI.md#unit-tests)
 
-    ```shell
+    ```
     -h,--help              Print this message
     --print-output         Print program output
     --asm-print-level=N    Assembler output verbosity [0-9]
